@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.7.2'
 
-gem 'activesupport', '~> 6.1.1'
+gem 'activesupport', '~> 6.1.7', '>= 6.1.7.3'
 gem 'bugsnag', '~> 6.19.0'
 # TODO: Lock `bundler` until:
 #  https://github.com/rubysec/bundler-audit/issues/235 and
@@ -31,7 +31,7 @@ group :test do
   gem 'rspec_junit_formatter'
   gem 'rubocop', '~> 0.93', require: false
   gem 'simplecov', '~> 0.21.2'
-  gem 'webmock', '~> 3.11'
+  gem 'webmock', '~> 3.11', '>= 3.11.2'
 end
 
-gem "json-schema", "~> 2.8"
+gem "json-schema", "~> 2.8", ">= 2.8.1"
